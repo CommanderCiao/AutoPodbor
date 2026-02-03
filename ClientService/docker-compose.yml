@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  # === ClientService ===
+  client-service:
+    build: ./ClientService
+    ports:
+      - "8080:80"
+    depends_on:
+      - db-client
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db-client;Port=5432;Database=clientdb;Username=postgres;Password=password
+    networks:
+      - auto-selection-net
+
+  db-client:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: clientdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata_client:/var/lib/postgresql/data
+    networks:
+      - auto-selection-net
+
+  # === VehicleSearchService ===
+  vehicle-search:
+    build: ./VehicleSearchService
+    ports:
+      - "8081:80"
+    depends_on:
+      - db-vehicle
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=db-vehicle;Port=5432;Database=vehicledb;Username=postgres;Password=password
+    networks:
+      - auto-selection-net
+
+  db-vehicle:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: vehicledb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata_vehicle:/var/lib/postgresql/data
+    networks:
+      - auto-selection-net
+
+networks:
+  auto-selection-net:
+    driver: bridge
+
+volumes:
+  pgdata_client:
+  pgdata_vehicle:

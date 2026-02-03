@@ -1,0 +1,72 @@
+name: auto-selection
+
+services:
+  client-service:
+    build: ./ClientService
+    ports:
+      - "8080:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:80
+      - ConnectionStrings__DefaultConnection=Host=db-client;Database=clientdb;Username=postgres;Password=password
+    depends_on:
+      db-client:
+        condition: service_healthy
+    networks:
+      - auto-selection-net
+    restart: on-failure
+
+  vehicle-search:
+    build: ./VehicleSearchService
+    ports:
+      - "8081:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:80
+      - ConnectionStrings__DefaultConnection=Host=db-vehicle;Database=vehicledb;Username=postgres;Password=password
+    depends_on:
+      db-vehicle:
+        condition: service_healthy
+    networks:
+      - auto-selection-net
+    restart: on-failure
+
+  db-client:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: clientdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata_client:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - auto-selection-net
+
+  db-vehicle:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: vehicledb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata_vehicle:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - auto-selection-net
+
+networks:
+  auto-selection-net:
+    driver: bridge
+
+volumes:
+  pgdata_client:
+  pgdata_vehicle:

@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "VehicleSearchService.Controllers.VehicleSearchController",
+    "Method": "StartSelection",
+    "RelativePath": "api/VehicleSearch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "VehicleSearchService.Controllers.StartSelectionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VehicleSearchService.Controllers.VehicleSearchController",
+    "Method": "GetSelection",
+    "RelativePath": "api/VehicleSearch/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

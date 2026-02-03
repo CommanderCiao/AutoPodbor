@@ -1,0 +1,36 @@
+using Microsoft.EntityFrameworkCore;
+using Npgsql.EntityFrameworkCore.PostgreSQL; 
+using System.Text.Json.Serialization;
+using VehicleSearchService.Controllers;
+using VehicleSearchService.Data;
+    
+var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddControllers().AddJsonOptions(options =>
+{
+    options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+});
+builder.Logging.AddConsole();
+builder.Services.AddOpenApi();
+builder.Services.AddHttpClient();
+var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+    context.Database.Migrate();
+}
+
+if (app.Environment.IsDevelopment())
+{
+    app.MapOpenApi();
+}
+
+
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

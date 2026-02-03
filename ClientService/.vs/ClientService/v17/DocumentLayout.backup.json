@@ -1,0 +1,233 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\controllers\\clientrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:controllers\\clientrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\dto\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:dto\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\models\\clientrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:models\\clientrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\clientservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:clientservice.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\migrations\\20260129172250_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:migrations\\20260129172250_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StatusUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\DTO\\StatusUpdateDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\StatusUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\DTO\\StatusUpdateDTO.cs",
+              "RelativeToolTip": "DTO\\StatusUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T04:42:54.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\DTO\\ClientRequestDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ClientRequestDTO.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\DTO\\ClientRequestDTO.cs",
+              "RelativeToolTip": "DTO\\ClientRequestDTO.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA2wA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T02:49:12.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientRequestsController.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Controllers\\ClientRequestsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClientRequestsController.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Controllers\\ClientRequestsController.cs",
+              "RelativeToolTip": "Controllers\\ClientRequestsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T14:52:36.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientRequest.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Models\\ClientRequest.cs",
+              "RelativeDocumentMoniker": "Models\\ClientRequest.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Models\\ClientRequest.cs",
+              "RelativeToolTip": "Models\\ClientRequest.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA5wA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T14:45:49.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Program.cs*",
+              "RelativeToolTip": "Program.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T15:10:50.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ClientService.http",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\ClientService.http",
+              "RelativeDocumentMoniker": "ClientService.http",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\ClientService.http",
+              "RelativeToolTip": "ClientService.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-01-30T08:49:26.269Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20260129172250_InitialCreate.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Migrations\\20260129172250_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260129172250_InitialCreate.Designer.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Migrations\\20260129172250_InitialCreate.Designer.cs",
+              "RelativeToolTip": "Migrations\\20260129172250_InitialCreate.Designer.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T08:51:29.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ApplicationDBContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Migrations\\ApplicationDBContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Migrations\\ApplicationDBContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Migrations\\ApplicationDBContextModelSnapshot.cs",
+              "RelativeToolTip": "Migrations\\ApplicationDBContextModelSnapshot.cs",
+              "ViewState": "AgIAADoAAAAAAAAAAAAQwB0AAABmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-30T08:51:45.27Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T14:42:34.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T15:10:38.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-27T15:10:31.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-27T15:09:00.907Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

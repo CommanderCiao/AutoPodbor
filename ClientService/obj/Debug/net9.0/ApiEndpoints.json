@@ -1,0 +1,107 @@
+[
+  {
+    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "Method": "GetAll",
+    "RelativePath": "api/ClientRequests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "Method": "ValidateRequest",
+    "RelativePath": "api/ClientRequests",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EasyGetQuery.Models.ClientRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "Method": "Create",
+    "RelativePath": "api/ClientRequests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "EasyGetQuery.Models.ClientRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "Method": "Get",
+    "RelativePath": "api/ClientRequests/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "Method": "Update",
+    "RelativePath": "api/ClientRequests/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clientRequest",
+        "Type": "EasyGetQuery.Models.ClientRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "Method": "Delete",
+    "RelativePath": "api/ClientRequests/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
