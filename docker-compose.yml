@@ -31,6 +31,21 @@ services:
       - auto-selection-net
     restart: on-failure
 
+  inspection-service:
+    build: ./InspectionService
+    ports:
+      - "8082:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:80
+      - ConnectionStrings__DefaultConnection=Host=db-inspection;Database=inspectiondb;Username=postgres;Password=password
+    depends_on:
+      db-inspection:
+        condition: service_healthy
+    networks:
+      - auto-selection-net
+    restart: on-failure
+
   db-client:
     image: postgres:15
     environment:
@@ -63,6 +78,22 @@ services:
     networks:
       - auto-selection-net
 
+  db-inspection:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: inspectiondb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    volumes:
+      - pgdata_inspection:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - auto-selection-net
+
 networks:
   auto-selection-net:
     driver: bridge
@@ -70,3 +101,4 @@ networks:
 volumes:
   pgdata_client:
   pgdata_vehicle:
+  pgdata_inspection:

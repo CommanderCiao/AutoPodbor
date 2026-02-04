@@ -19,7 +19,8 @@
     {
         New,
         InReview,
-        Approved,
+        Verified,
+        Rejected,
         Closed
     }
 

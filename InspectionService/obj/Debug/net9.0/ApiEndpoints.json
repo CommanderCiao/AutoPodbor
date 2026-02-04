@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "StartTechincalInspection",
+    "RelativePath": "api/Inspection",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "inspection",
+        "Type": "InspectionService.DTO.InspectionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "GetInspection",
+    "RelativePath": "api/Inspection/{clientRequestId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientRequestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

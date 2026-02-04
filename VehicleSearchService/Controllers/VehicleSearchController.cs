@@ -17,7 +17,6 @@ namespace VehicleSearchService.Controllers
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly ILogger<VehicleSearchController> _logger;
 
-
         public VehicleSearchController(ApplicationDbContext context, IHttpClientFactory httpClientFactory, ILogger<VehicleSearchController> logger)
         {
             _context = context;
@@ -126,8 +125,5 @@ namespace VehicleSearchService.Controllers
         }
     }
 
-    public class StartSelectionRequest
-    {
-        public int ClientRequestId { get; set; }
-    }
+
 }
