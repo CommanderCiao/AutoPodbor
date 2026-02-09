@@ -123,6 +123,26 @@ namespace VehicleSearchService.Controllers
             };
             return Ok(dto);
         }
+
+        [HttpGet("getVehicle/{id}")]
+        public async Task<IActionResult> GetVehicleById(int id)
+        {
+            var vehicle = await _context.Vehicles.FindAsync(id);
+
+            if (vehicle == null)
+            {
+                return NotFound();
+            }
+
+            var vehicleDto = new VehicleGetterDto
+            {
+                Id = vehicle.Id,
+                Price = vehicle.Price
+            };
+          
+            return Ok(vehicleDto);
+        }
+
     }
 
 

@@ -36,7 +36,9 @@ namespace InspectionService.Models
         InReview,
         Verified,
         Rejected,
+        DealPrepared,
         Closed
     }
+
 }
 

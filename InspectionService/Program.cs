@@ -1,7 +1,5 @@
 using InspectionService.Data;
 using Microsoft.EntityFrameworkCore;
-using Npgsql.EntityFrameworkCore.PostgreSQL;
-using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 

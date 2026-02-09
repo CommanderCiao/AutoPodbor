@@ -11,6 +11,10 @@
       "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:controllers\\clientrequestscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\dto\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:dto\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\clientservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:clientservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\dto\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|solutionrelative:dto\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C7D0F2C-01E2-4458-B99E-F9C07C8E18E4}|ClientService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\clientservice\\dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,23 +62,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ClientService.csproj",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\ClientService.csproj",
               "RelativeDocumentMoniker": "ClientService.csproj",
@@ -90,13 +82,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "ClientRequestDTO.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\DTO\\ClientRequestDTO.cs",
               "RelativeDocumentMoniker": "DTO\\ClientRequestDTO.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\DTO\\ClientRequestDTO.cs",
               "RelativeToolTip": "DTO\\ClientRequestDTO.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAA2wA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T02:49:12.529Z"
             },
@@ -110,8 +102,7 @@
               "RelativeToolTip": "Controllers\\ClientRequestsController.cs",
               "ViewState": "AgIAAGUAAAAAAAAAAAAswHYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-27T14:52:36.323Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-27T14:52:36.323Z"
             },
             {
               "$type": "Document",
@@ -121,14 +112,14 @@
               "RelativeDocumentMoniker": "Models\\ClientRequest.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Models\\ClientRequest.cs",
               "RelativeToolTip": "Models\\ClientRequest.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAzwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAIAzwBcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-27T14:45:49.308Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -140,7 +131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -152,7 +143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\ClientService\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -233,6 +224,14 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2026-01-27T15:10:38.379Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         }

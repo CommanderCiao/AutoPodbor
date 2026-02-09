@@ -21,6 +21,7 @@
         InReview,
         Verified,
         Rejected,
+        DealPrepared,
         Closed
     }
 

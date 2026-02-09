@@ -1,0 +1,39 @@
+[
+  {
+    "ContainingType": "DealService.Controllers.DealController",
+    "Method": "MakeContract",
+    "RelativePath": "api/Deal/{clientRequestId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientRequestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "DealService.DTO.VehicleGetterDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "DealService.Controllers.DealController",
+    "Method": "GetContract",
+    "RelativePath": "api/Deal/{dealId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dealId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

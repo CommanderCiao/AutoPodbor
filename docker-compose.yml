@@ -46,6 +46,21 @@ services:
       - auto-selection-net
     restart: on-failure
 
+  deal-service:
+    build: ./DealService
+    ports:
+      - "8083:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:80
+      - ConnectionStrings__DefaultConnection=Host=db-deal;Database=dealdb;Username=postgres;Password=password
+    depends_on:
+      db-client:
+        condition: service_healthy
+    networks:
+      - auto-selection-net
+    restart: on-failure
+
   db-client:
     image: postgres:15
     environment:
@@ -94,6 +109,24 @@ services:
     networks:
       - auto-selection-net
 
+  db-deal:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: dealdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5434:5432"
+    volumes:
+      - pgdata_deal:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - auto-selection-net
+
 networks:
   auto-selection-net:
     driver: bridge
@@ -102,3 +135,4 @@ volumes:
   pgdata_client:
   pgdata_vehicle:
   pgdata_inspection:
+  pgdata_deal:

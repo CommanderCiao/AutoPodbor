@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,12 +23,20 @@
       "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:dto\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\models\\startselectionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:models\\startselectionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\dto\\vehiclegetterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:dto\\vehiclegetterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\dto\\vehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:dto\\vehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\models\\startselectionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:models\\startselectionrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\models\\vehicleselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\dto\\vehicleselectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:dto\\vehicleselectiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\vehiclesearchservice\\dto\\vehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9AF3353-EAB4-4253-BD3C-F1C28222A781}|VehicleSearchService.csproj|solutionrelative:dto\\vehicledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -67,15 +71,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "StartSelectionRequest.cs",
-              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\StartSelectionRequest.cs",
-              "RelativeDocumentMoniker": "Models\\StartSelectionRequest.cs",
-              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\StartSelectionRequest.cs",
-              "RelativeToolTip": "Models\\StartSelectionRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "VehicleGetterDto.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\DTO\\VehicleGetterDto.cs",
+              "RelativeDocumentMoniker": "DTO\\VehicleGetterDto.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\DTO\\VehicleGetterDto.cs",
+              "RelativeToolTip": "DTO\\VehicleGetterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T14:44:49.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-08T07:06:55.106Z"
             },
             {
               "$type": "Document",
@@ -85,10 +88,9 @@
               "RelativeDocumentMoniker": "Controllers\\VehicleSearchController.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Controllers\\VehicleSearchController.cs",
               "RelativeToolTip": "Controllers\\VehicleSearchController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAQwEoAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwEYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T14:09:08.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T14:09:08.888Z"
             },
             {
               "$type": "Document",
@@ -100,8 +102,7 @@
               "RelativeToolTip": "DTO\\ClientRequestDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T02:59:23.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T02:59:23.172Z"
             },
             {
               "$type": "Document",
@@ -111,65 +112,13 @@
               "RelativeDocumentMoniker": "Models\\Vehicle.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\Vehicle.cs",
               "RelativeToolTip": "Models\\Vehicle.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAA0wCoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAIAzwCcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T11:20:27.123Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T11:31:51.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T12:25:49.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-02T11:20:27.123Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "StatusUpdateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\DTO\\StatusUpdateDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\StatusUpdateDTO.cs",
-              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\DTO\\StatusUpdateDTO.cs",
-              "RelativeToolTip": "DTO\\StatusUpdateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T04:46:04.326Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "VehicleSelection.cs",
-              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\VehicleSelection.cs",
-              "RelativeDocumentMoniker": "Models\\VehicleSelection.cs",
-              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\VehicleSelection.cs",
-              "RelativeToolTip": "Models\\VehicleSelection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T11:51:43.374Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "VehicleDTO.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\DTO\\VehicleDTO.cs",
               "RelativeDocumentMoniker": "DTO\\VehicleDTO.cs",
@@ -181,7 +130,77 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StatusUpdateDTO.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\DTO\\StatusUpdateDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\StatusUpdateDTO.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\DTO\\StatusUpdateDTO.cs",
+              "RelativeToolTip": "DTO\\StatusUpdateDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T04:46:04.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T12:25:49.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T11:31:51.481Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "StartSelectionRequest.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\StartSelectionRequest.cs",
+              "RelativeDocumentMoniker": "Models\\StartSelectionRequest.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\StartSelectionRequest.cs",
+              "RelativeToolTip": "Models\\StartSelectionRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-03T14:44:49.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VehicleSelection.cs",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\VehicleSelection.cs",
+              "RelativeDocumentMoniker": "Models\\VehicleSelection.cs",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Models\\VehicleSelection.cs",
+              "RelativeToolTip": "Models\\VehicleSelection.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-02T11:51:43.374Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -193,7 +212,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Dockerfile",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\Dockerfile",
               "RelativeDocumentMoniker": "Dockerfile",
@@ -205,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "VehicleSelectionDTO.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\VehicleSearchService\\DTO\\VehicleSelectionDTO.cs",
               "RelativeDocumentMoniker": "DTO\\VehicleSelectionDTO.cs",
@@ -214,14 +233,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-02T15:06:31.89Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             }
           ]
         }
