@@ -1,65 +1,65 @@
 name: auto-selection
 
 services:
-  client-service:
-    build: ./ClientService
-    ports:
-      - "8080:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*:80
-      - ConnectionStrings__DefaultConnection=Host=db-client;Database=clientdb;Username=postgres;Password=password
-    depends_on:
-      db-client:
-        condition: service_healthy
-    networks:
-      - auto-selection-net
-    restart: on-failure
+  # client-service:
+  #   build: ./ClientService
+  #   ports:
+  #     - "8080:80"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - ASPNETCORE_URLS=http://*:80
+  #     - ConnectionStrings__DefaultConnection=Host=db-client;Database=clientdb;Username=postgres;Password=password
+  #   depends_on:
+  #     db-client:
+  #       condition: service_healthy
+  #   networks:
+  #     - auto-selection-net
+  #   restart: on-failure
 
-  vehicle-search:
-    build: ./VehicleSearchService
-    ports:
-      - "8081:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*:80
-      - ConnectionStrings__DefaultConnection=Host=db-vehicle;Database=vehicledb;Username=postgres;Password=password
-    depends_on:
-      db-vehicle:
-        condition: service_healthy
-    networks:
-      - auto-selection-net
-    restart: on-failure
+  # vehicle-search:
+  #   build: ./VehicleSearchService
+  #   ports:
+  #     - "8081:80"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - ASPNETCORE_URLS=http://*:80
+  #     - ConnectionStrings__DefaultConnection=Host=db-vehicle;Database=vehicledb;Username=postgres;Password=password
+  #   depends_on:
+  #     db-vehicle:
+  #       condition: service_healthy
+  #   networks:
+  #     - auto-selection-net
+  #   restart: on-failure
 
-  inspection-service:
-    build: ./InspectionService
-    ports:
-      - "8082:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*:80
-      - ConnectionStrings__DefaultConnection=Host=db-inspection;Database=inspectiondb;Username=postgres;Password=password
-    depends_on:
-      db-inspection:
-        condition: service_healthy
-    networks:
-      - auto-selection-net
-    restart: on-failure
+  # inspection-service:
+  #   build: ./InspectionService
+  #   ports:
+  #     - "8082:80"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - ASPNETCORE_URLS=http://*:80
+  #     - ConnectionStrings__DefaultConnection=Host=db-inspection;Database=inspectiondb;Username=postgres;Password=password
+  #   depends_on:
+  #     db-inspection:
+  #       condition: service_healthy
+  #   networks:
+  #     - auto-selection-net
+  #   restart: on-failure
 
-  deal-service:
-    build: ./DealService
-    ports:
-      - "8083:80"
-    environment:
-      - ASPNETCORE_ENVIRONMENT=Development
-      - ASPNETCORE_URLS=http://*:80
-      - ConnectionStrings__DefaultConnection=Host=db-deal;Database=dealdb;Username=postgres;Password=password
-    depends_on:
-      db-client:
-        condition: service_healthy
-    networks:
-      - auto-selection-net
-    restart: on-failure
+  # deal-service:
+  #   build: ./DealService
+  #   ports:
+  #     - "8083:80"
+  #   environment:
+  #     - ASPNETCORE_ENVIRONMENT=Development
+  #     - ASPNETCORE_URLS=http://*:80
+  #     - ConnectionStrings__DefaultConnection=Host=db-deal;Database=dealdb;Username=postgres;Password=password
+  #   depends_on:
+  #     db-deal:
+  #       condition: service_healthy
+  #   networks:
+  #     - auto-selection-net
+  #   restart: on-failure
 
   db-client:
     image: postgres:15
@@ -67,6 +67,8 @@ services:
       POSTGRES_DB: clientdb
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
+    ports:
+    - "5433:5432"
     volumes:
       - pgdata_client:/var/lib/postgresql/data
     healthcheck:
@@ -77,55 +79,71 @@ services:
     networks:
       - auto-selection-net
 
-  db-vehicle:
-    image: postgres:15
-    environment:
-      POSTGRES_DB: vehicledb
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-    volumes:
-      - pgdata_vehicle:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-    networks:
-      - auto-selection-net
+  # db-vehicle:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_DB: vehicledb
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: password
+  #   volumes:
+  #     - pgdata_vehicle:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U postgres"]
+  #     interval: 5s
+  #     timeout: 5s
+  #     retries: 5
+  #   networks:
+  #     - auto-selection-net
 
-  db-inspection:
-    image: postgres:15
-    environment:
-      POSTGRES_DB: inspectiondb
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-    volumes:
-      - pgdata_inspection:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-    networks:
-      - auto-selection-net
+  # db-inspection:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_DB: inspectiondb
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: password
+  #   volumes:
+  #     - pgdata_inspection:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U postgres"]
+  #     interval: 5s
+  #     timeout: 5s
+  #     retries: 5
+  #   networks:
+  #     - auto-selection-net
 
-  db-deal:
-    image: postgres:15
-    environment:
-      POSTGRES_DB: dealdb
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: password
-    ports:
-      - "5434:5432"
-    volumes:
-      - pgdata_deal:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
-      interval: 5s
-      timeout: 5s
-      retries: 5
-    networks:
-      - auto-selection-net
+  # db-deal:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_DB: dealdb
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: password
+  #   volumes:
+  #     - pgdata_deal:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U postgres"]
+  #     interval: 5s
+  #     timeout: 5s
+  #     retries: 5
+  #   networks:
+  #     - auto-selection-net
+
+  # db-delivery:
+  #   image: postgres:15
+  #   environment:
+  #     POSTGRES_DB: deliverydb
+  #     POSTGRES_USER: postgres
+  #     POSTGRES_PASSWORD: password
+  #   ports:
+  #     - "5436:5432"
+  #   volumes:
+  #     - pgdata_delivery:/var/lib/postgresql/data
+  #   healthcheck:
+  #     test: ["CMD-SHELL", "pg_isready -U postgres"]
+  #     interval: 5s
+  #     timeout: 5s
+  #     retries: 5
+  #   networks:
+  #     - auto-selection-net
 
 networks:
   auto-selection-net:
@@ -136,3 +154,4 @@ volumes:
   pgdata_vehicle:
   pgdata_inspection:
   pgdata_deal:
+  pgdata_delivery:

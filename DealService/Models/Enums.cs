@@ -7,6 +7,9 @@
         Verified,
         Rejected,
         DealPrepared,
+        InTransit,
+        Delivered,
+        Completed,
         Closed
     }
 

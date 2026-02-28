@@ -15,7 +15,6 @@ namespace InspectionService.Models
         public string? VIN { get; set; }
     }
 
-    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum Segment
     {
         Premium = 0,
@@ -23,7 +22,6 @@ namespace InspectionService.Models
         Working = 2
     }
 
-    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum SourceOfPurchase
     {
         Import = 0,
@@ -37,6 +35,9 @@ namespace InspectionService.Models
         Verified,
         Rejected,
         DealPrepared,
+        InTransit,
+        Delivered,
+        Completed,
         Closed
     }
 

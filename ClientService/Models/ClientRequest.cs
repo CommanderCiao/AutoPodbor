@@ -3,25 +3,32 @@
     public class ClientRequest
     {
         public int Id { get; set; }
+        public int ClientId { get; set; }
         public string? FullName { get; set; }
         public string? Phone {  get; set; }
         public string? Email { get; set; }
-        public string? PreferredBand { get; set; }
+        public string? PreferredBrand { get; set; }
         public int? MaxKilometrage { get; set; }
         public decimal Budget { get; set; }
         public int YearOfManufacture { get; set; }
         public Segment Segment { get; set; }
         public SourceOfPurchase Source { get; set; }
-        public RequestStatus Status { get; set; } = RequestStatus.New;
+        public RequestStatus Status { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
     }
 
     public enum RequestStatus
     {
+        Draft,
         New,
         InReview,
         Verified,
         Rejected,
         DealPrepared,
+        InTransit,
+        Delivered,
+        Completed,
         Closed
     }
 

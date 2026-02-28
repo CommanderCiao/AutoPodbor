@@ -20,8 +20,6 @@ namespace DealService.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
-
-
         [HttpPost("{clientRequestId}")]
         public async Task<IActionResult> MakeContract(int clientRequestId, [FromBody] VehicleGetterDto dto)
         {
@@ -90,5 +88,7 @@ namespace DealService.Controllers
 
             return Ok(deal);
         }
+
+        
     }
 }

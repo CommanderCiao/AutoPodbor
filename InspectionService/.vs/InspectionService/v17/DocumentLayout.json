@@ -70,11 +70,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
@@ -84,7 +84,7 @@
               "RelativeDocumentMoniker": "Controllers\\InspectionController.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Controllers\\InspectionController.cs",
               "RelativeToolTip": "Controllers\\InspectionController.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAYwEwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAYwGwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T15:35:59.133Z",
               "EditorCaption": ""
@@ -133,9 +133,10 @@
               "RelativeDocumentMoniker": "Models\\Vehicle.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Models\\Vehicle.cs",
               "RelativeToolTip": "Models\\Vehicle.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAIAzwCcAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T14:47:10.676Z"
+              "WhenOpened": "2026-02-03T14:47:10.676Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

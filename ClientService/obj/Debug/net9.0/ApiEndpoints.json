@@ -1,16 +1,6 @@
 [
   {
-    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
-    "Method": "GetAll",
-    "RelativePath": "api/ClientRequests",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
     "Method": "ValidateRequest",
     "RelativePath": "api/ClientRequests",
     "HttpMethod": "",
@@ -19,7 +9,7 @@
     "Parameters": [
       {
         "Name": "request",
-        "Type": "EasyGetQuery.Models.ClientRequest",
+        "Type": "ClientService.Models.ClientRequest",
         "IsRequired": true
       }
     ],
@@ -36,31 +26,15 @@
     ]
   },
   {
-    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
-    "Method": "Create",
-    "RelativePath": "api/ClientRequests",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "request",
-        "Type": "EasyGetQuery.Models.ClientRequest",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
-    "Method": "Get",
-    "RelativePath": "api/ClientRequests/{id}",
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
+    "Method": "GetLatestDraft",
+    "RelativePath": "api/ClientRequests/drafts/getlatest/{clientRequestId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clientRequestId",
         "Type": "System.Int32",
         "IsRequired": true
       }
@@ -68,36 +42,136 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
+    "Method": "SaveDraft",
+    "RelativePath": "api/ClientRequests/drafts/save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "ClientService.DTO.ClientRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
+    "Method": "Get",
+    "RelativePath": "api/ClientRequests/requests/{clientRequestId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientRequestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
     "Method": "Update",
-    "RelativePath": "api/ClientRequests/{id}",
+    "RelativePath": "api/ClientRequests/requests/{clientRequestId}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clientRequestId",
         "Type": "System.Int32",
         "IsRequired": true
       },
       {
         "Name": "clientRequest",
-        "Type": "EasyGetQuery.Models.ClientRequest",
+        "Type": "ClientService.Models.ClientRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "EasyGetQuery.Controllers.ClientRequestsController",
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
     "Method": "Delete",
-    "RelativePath": "api/ClientRequests/{id}",
+    "RelativePath": "api/ClientRequests/requests/{clientRequestId}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "id",
+        "Name": "clientRequestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/ClientRequests/requests/{clientRequestId}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientRequestId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "statusDTO",
+        "Type": "ClientService.DTO.StatusUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
+    "Method": "GetAll",
+    "RelativePath": "api/ClientRequests/requests/getall",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "status",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "clientId",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ClientService.Controllers.ClientRequestsController",
+    "Method": "CreateRequest",
+    "RelativePath": "api/ClientRequests/requests/submit/{clientRequestId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clientRequestId",
         "Type": "System.Int32",
         "IsRequired": true
       }

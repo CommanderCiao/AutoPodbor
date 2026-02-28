@@ -37,6 +37,8 @@ namespace VehicleSearchService.Models
         Verified,
         Rejected,
         DealPrepared,
+        InTransit,
+        Delivered,
         Closed
     }
 }

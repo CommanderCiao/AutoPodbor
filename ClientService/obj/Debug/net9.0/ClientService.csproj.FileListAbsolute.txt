@@ -251,10 +251,11 @@ C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросер
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\staticwebassets.build.json.cache
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\staticwebassets.development.json
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\staticwebassets.build.endpoints.json
-C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\ClientSe.208B0CFF.Up2Date
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\ClientService.dll
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\refint\ClientService.dll
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\ClientService.pdb
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\ClientService.genruntimeconfig.cache
 C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\ref\ClientService.dll
+C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\ClientService.sourcelink.json
+C:\Users\gkras\Desktop\Учеба\8 семестр\Курсач\Микросервисы\ClientService\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt
