@@ -2,14 +2,14 @@
   {
     "ContainingType": "VehicleSearchService.Controllers.VehicleSearchController",
     "Method": "StartSelection",
-    "RelativePath": "api/VehicleSearch",
+    "RelativePath": "api/VehicleSearch/{id}",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "VehicleSearchService.Controllers.StartSelectionRequest",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -26,6 +26,136 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VehicleSearchService.Controllers.VehicleSearchController",
+    "Method": "AddVehicle",
+    "RelativePath": "api/VehicleSearch/{id}/vehicles/{vehicleId}/attach",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vehicleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VehicleSearchService.Controllers.VehicleSearchController",
+    "Method": "RemoveVehicle",
+    "RelativePath": "api/VehicleSearch/{id}/vehicles/{vehicleId}/remove",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vehicleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VehicleSearchService.Controllers.VehicleSearchController",
+    "Method": "GetVehicleById",
+    "RelativePath": "api/VehicleSearch/getVehicleInfo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VehicleSearchService.Controllers.VehicleSearchController",
+    "Method": "GetAllVehicles",
+    "RelativePath": "api/VehicleSearch/getVehiclesCards",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "budget",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "yearOfManufacture",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "maxKilometrage",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "preferredBrand",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "segment",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "source",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VehicleSearchService.Controllers.VehicleSearchController",
+    "Method": "AddVehicle",
+    "RelativePath": "api/VehicleSearch/statusUpdate/{vehicleId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehicleId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "status",
+        "Type": "VehicleSearchService.DTO.VehicleStatusDto",
         "IsRequired": true
       }
     ],

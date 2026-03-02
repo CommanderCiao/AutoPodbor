@@ -63,7 +63,7 @@ namespace ClientService.Controllers
                     
                 };
                 message = "Черновик заявки создан";
-                clientRequestId = newDraft.Id;
+                clientRequestId = _context.ClientRequests.Count() + 1;
 
                 _context.ClientRequests.Add(newDraft);
             }

@@ -1,4 +1,6 @@
-﻿namespace VehicleSearchService.Models
+﻿using VehicleSearchService.DTO;
+
+namespace VehicleSearchService.Models
 {
     public class VehicleSelection
     {

@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VehicleSearchService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+61aca550d97fda5c4a502f08dd82c1c5297cdcf8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b935181fe9dce1aa737437c6514f995f1deb50bf")]
 [assembly: System.Reflection.AssemblyProductAttribute("VehicleSearchService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VehicleSearchService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

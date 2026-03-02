@@ -10,9 +10,18 @@ namespace VehicleSearchService.Models
         public int Kilometrage { get; set; }               
         public decimal Price { get; set; }             
         public Segment Segment { get; set; }           
-        public SourceOfPurchase Source { get; set; }            
+        public SourceOfPurchase Source { get; set; }       
+        public Status Status { get; set; }
         public string? Model { get; set; }        
         public string? VIN { get; set; }
+    }
+
+    public enum Status
+    {
+        Available,
+        Reserved,
+        Closed,
+        UnderCheck
     }
 
     [JsonConverter(typeof(JsonStringEnumConverter))]

@@ -5,7 +5,7 @@ namespace VehicleSearchService.DTO
     public class ClientRequestDTO
     {
         public int Id { get; set; }
-        public string? PreferredBand { get; set; }
+        public string? PreferredBrand { get; set; }
         public int? MaxKilometrage { get; set; }
         public decimal Budget { get; set; }
         public int YearOfManufacture { get; set; }
