@@ -43,8 +43,6 @@ namespace VehicleSearchService.Models
     {
         New,
         InReview,
-        Verified,
-        Rejected,
         DealPrepared,
         InTransit,
         Delivered,

@@ -1,15 +1,15 @@
 [
   {
     "ContainingType": "InspectionService.Controllers.InspectionController",
-    "Method": "StartTechincalInspection",
-    "RelativePath": "api/Inspection",
-    "HttpMethod": "POST",
+    "Method": "GetInspection",
+    "RelativePath": "api/Inspection/{id}",
+    "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "inspection",
-        "Type": "InspectionService.DTO.InspectionDTO",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -17,15 +17,141 @@
   },
   {
     "ContainingType": "InspectionService.Controllers.InspectionController",
-    "Method": "GetInspection",
-    "RelativePath": "api/Inspection/{clientRequestId}",
+    "Method": "GetAllLegalInspections",
+    "RelativePath": "api/Inspection/alllegalinspections",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "clientRequestId",
+        "Name": "pageNumber",
         "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "GetAllTechInspections",
+    "RelativePath": "api/Inspection/alltechnicalinspections",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "CreateInspectionRequest",
+    "RelativePath": "api/Inspection/inspectionrequest",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "InspectionService.DTO.InspectionRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "StartLegalInspection",
+    "RelativePath": "api/Inspection/legalinspection/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "inspection",
+        "Type": "InspectionService.DTO.LegalInspectionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "EditLegalInspection",
+    "RelativePath": "api/Inspection/legalinspection/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "inspection",
+        "Type": "InspectionService.DTO.LegalInspectionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "StartTechincalInspection",
+    "RelativePath": "api/Inspection/technicalinspection/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "inspection",
+        "Type": "InspectionService.DTO.TechnicalInspectionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "EditTechnicalInspection",
+    "RelativePath": "api/Inspection/technicalinspection/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "inspection",
+        "Type": "InspectionService.DTO.TechnicalInspectionDTO",
         "IsRequired": true
       }
     ],

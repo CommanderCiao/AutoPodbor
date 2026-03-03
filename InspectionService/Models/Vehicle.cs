@@ -13,7 +13,10 @@ namespace InspectionService.Models
         public SourceOfPurchase Source { get; set; }
         public string? Model { get; set; }
         public string? VIN { get; set; }
+        public VehicleStatus Status { get; set; }
+
     }
+
 
     public enum Segment
     {
@@ -30,15 +33,23 @@ namespace InspectionService.Models
     }
     public enum RequestStatus
     {
+        Draft,
         New,
         InReview,
-        Verified,
-        Rejected,
+        Inspected,
         DealPrepared,
         InTransit,
         Delivered,
         Completed,
         Closed
+    }
+
+    public enum VehicleStatus
+    {
+        Available,
+        Reserved,
+        Closed,
+        UnderCheck
     }
 
 }

@@ -9,6 +9,7 @@
         public bool HasLien { get; set; }
         public bool RegisteredInGIBDD { get; set; }
         public bool OwnedByLegalEntity { get; set; }
+        public InspectionStatus Status { get; set; }
         public DateTime CompletedAt { get; set; }
     }
 }

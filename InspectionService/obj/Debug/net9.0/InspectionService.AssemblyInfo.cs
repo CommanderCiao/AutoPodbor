@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("InspectionService")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fb3d41ab049ef828ef3e5ab53d074a4ba6081ca")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64e8cd7ad7360644c05eaed89cb25469504ea531")]
 [assembly: System.Reflection.AssemblyProductAttribute("InspectionService")]
 [assembly: System.Reflection.AssemblyTitleAttribute("InspectionService")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

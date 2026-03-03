@@ -16,20 +16,20 @@ services:
       - auto-selection-net
     restart: on-failure
 
-  # vehicle-search:
-  #   build: ./VehicleSearchService
-  #   ports:
-  #     - "8081:80"
-  #   environment:
-  #     - ASPNETCORE_ENVIRONMENT=Development
-  #     - ASPNETCORE_URLS=http://*:80
-  #     - ConnectionStrings__DefaultConnection=Host=db-vehicle;Database=vehicledb;Username=postgres;Password=password
-  #   depends_on:
-  #     db-vehicle:
-  #       condition: service_healthy
-  #   networks:
-  #     - auto-selection-net
-  #   restart: on-failure
+  vehicle-search:
+    build: ./VehicleSearchService
+    ports:
+      - "8081:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:80
+      - ConnectionStrings__DefaultConnection=Host=db-vehicle;Database=vehicledb;Username=postgres;Password=password
+    depends_on:
+      db-vehicle:
+        condition: service_healthy
+    networks:
+      - auto-selection-net
+    restart: on-failure
 
   # inspection-service:
   #   build: ./InspectionService
@@ -83,8 +83,6 @@ services:
       POSTGRES_DB: vehicledb
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
-    ports:
-    - "5433:5432"
     volumes:
       - pgdata_vehicle:/var/lib/postgresql/data
     healthcheck:
@@ -95,21 +93,23 @@ services:
     networks:
       - auto-selection-net
 
-  # db-inspection:
-  #   image: postgres:15
-  #   environment:
-  #     POSTGRES_DB: inspectiondb
-  #     POSTGRES_USER: postgres
-  #     POSTGRES_PASSWORD: password
-  #   volumes:
-  #     - pgdata_inspection:/var/lib/postgresql/data
-  #   healthcheck:
-  #     test: ["CMD-SHELL", "pg_isready -U postgres"]
-  #     interval: 5s
-  #     timeout: 5s
-  #     retries: 5
-  #   networks:
-  #     - auto-selection-net
+  db-inspection:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: inspectiondb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+    - "5433:5432"
+    volumes:
+      - pgdata_inspection:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - auto-selection-net
 
   # db-deal:
   #   image: postgres:15

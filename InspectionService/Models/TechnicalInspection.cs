@@ -7,7 +7,14 @@
         public int ClientRequestId { get; set; }
         public bool IsBodyDamaged { get; set; }
         public bool KilometrageVerified { get; set; }
-        public string Recommendations { get; set; }
+        public string? Recommendations { get; set; }
         public DateTime CompletedAt { get; set; }
+        public InspectionStatus Status { get; set; }
+    }
+
+    public enum InspectionStatus
+    {
+        New,
+        Inspected
     }
 }

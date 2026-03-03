@@ -3,8 +3,11 @@ using InspectionService.DTO;
 using InspectionService.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Buffers.Text;
 using System.Net.Http;
 using System.Net.Http.Json;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace InspectionService.Controllers
 {
@@ -14,70 +17,240 @@ namespace InspectionService.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IConfiguration _config;
 
-        public InspectionController(ApplicationDbContext context, IHttpClientFactory httpClientFactory)
+        public InspectionController(ApplicationDbContext context, IHttpClientFactory httpClientFactory, IConfiguration config)
         {
             _context = context;
             _httpClientFactory = httpClientFactory;
+            _config = config;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> StartTechincalInspection([FromBody] InspectionDTO inspection)
+        [HttpPost("inspectionrequest")]
+        public async Task<IActionResult> CreateInspectionRequest([FromBody] InspectionRequestDto dto)
         {
-            var httpClient = _httpClientFactory.CreateClient();
-            httpClient.BaseAddress = new Uri("http://client-service:80/");
+            var baseUrl = _config["VehicleSearchUrl"];
+            var httpVehicleClient = _httpClientFactory.CreateClient();
 
-            var legal = new LegalInspection
+            var createdInspections = new List<object>();
+
+            foreach (var id in dto.VehicleIds)
             {
-                ClientRequestId = inspection.ClientRequestId,
-                VehicleId = inspection.VehicleId,
-                HasLien = inspection.Legal.HasLien,
-                IsStolen = inspection.Legal.IsStolen,
-                OwnedByLegalEntity = inspection.Legal.OwnedByLegalEntity,
-                RegisteredInGIBDD = inspection.Legal.RegisteredInGIBDD,
-                CompletedAt = DateTime.UtcNow
-            };
+                var response = await httpVehicleClient.GetAsync($"{baseUrl}/api/VehicleSearch/getVehicleInfo/{id}");
 
-            var technical = new TechnicalInspection
-            {
-                ClientRequestId = inspection.ClientRequestId,
-                VehicleId = inspection.VehicleId,
-                IsBodyDamaged = inspection.Technical.IsBodyDamaged,
-                KilometrageVerified = inspection.Technical.KilometrageVerified,
-                Recommendations = inspection.Technical.Recommendations,
-                CompletedAt = DateTime.UtcNow
-            };
+                if (!response.IsSuccessStatusCode)
+                {
+                    return NotFound("Автомобиль не найден");
+                }
 
-            _context.LegalInspections.Add(legal);
-            _context.TechnicalInspections.Add(technical);
+                var vehicle = await response.Content.ReadFromJsonAsync<Vehicle>(
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true,
+                        Converters = { new JsonStringEnumConverter() }
+                    });
 
-            await _context.SaveChangesAsync();
+                if (vehicle.Status != VehicleStatus.Available)
+                {
+                    return BadRequest($"Автомобиль недоступен для проверки: {vehicle.Status}");
+                }
 
-            var isVerified = legal.HasLien == false && legal.IsStolen == false &&
-                legal.OwnedByLegalEntity == false && legal.RegisteredInGIBDD == true &&
-                technical.IsBodyDamaged == false && technical.KilometrageVerified == true;
+                var responseVehicle = await httpVehicleClient.PutAsJsonAsync($"{baseUrl}/api/vehiclesearch/statusUpdate/{id}", new VehicleStatusDto { Status = VehicleStatus.UnderCheck });
 
-            httpClient.DefaultRequestHeaders.Add("X-User-Role", "analyst");
-            var status = isVerified ? RequestStatus.Verified : RequestStatus.Rejected;
-            var statusUpdateRequest = new StatusUpdateDTO { Status = status };
+                var technicalInspection = new TechnicalInspection
+                {
+                    VehicleId = id,
+                    ClientRequestId = dto.ClientRequestId,
+                    Status = InspectionStatus.New
+                };
 
-            var response = await httpClient.PutAsJsonAsync($"api/clientrequests/{legal.ClientRequestId}/status", statusUpdateRequest);
+                var legalInspection = new LegalInspection
+                {
+                    VehicleId = id,
+                    ClientRequestId = dto.ClientRequestId,
+                    Status = InspectionStatus.New
+                };
+
+                await _context.TechnicalInspections.AddAsync(technicalInspection);
+                await _context.LegalInspections.AddAsync(legalInspection);
+                await _context.SaveChangesAsync();
+
+                createdInspections.Add(new
+                {
+                    vehicleId = id,
+                    technicalInspectionId = technicalInspection.Id,
+                    legalInspectionId = legalInspection.Id
+                });
+            }
 
             return Ok(new
             {
-                message = "Проверка завершена",
-                requestId = legal.ClientRequestId,
-                vehicleId = legal.VehicleId,
-                result = status.ToString()
+                Message = "Созданы заявки на тех. и юр. проверки для автомобиля",
+                ClientRequestId = dto.ClientRequestId,
+                Inspections = createdInspections
             });
         }
 
-        [HttpGet("{clientRequestId}")]
-        public async Task<IActionResult> GetInspection(int clientRequestId)
+        [HttpPost("technicalinspection/{id}")]
+        public async Task<IActionResult> StartTechincalInspection(int id, [FromBody] TechnicalInspectionDTO inspection)
         {
-            var legal = await _context.LegalInspections.FirstOrDefaultAsync(x => x.ClientRequestId == clientRequestId);
+            var technical = await _context.TechnicalInspections.Where(x => x.Id == id && x.Status == InspectionStatus.New).FirstOrDefaultAsync();
 
-            var technical = await _context.TechnicalInspections.FirstOrDefaultAsync(x => x.ClientRequestId == clientRequestId);
+            if (technical == null)
+                return NotFound("Заявки на техническую проверку для данного авто не существует");
+
+            technical.IsBodyDamaged = inspection.IsBodyDamaged;
+            technical.KilometrageVerified = inspection.KilometrageVerified;
+            technical.Recommendations = inspection.Recommendations;
+            technical.CompletedAt = DateTime.UtcNow;
+            technical.Status = InspectionStatus.Inspected;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                Message = "Данные по технической проверке внесены",
+                Id = id
+            });
+        }
+
+        [HttpPut("technicalinspection/{id}")]
+        public async Task<IActionResult> EditTechnicalInspection(int id, [FromBody] TechnicalInspectionDTO inspection)
+        {
+            var technical = await _context.TechnicalInspections.Where(x => x.Id == id && x.Status == InspectionStatus.Inspected).FirstOrDefaultAsync();
+
+            if (technical == null)
+                return NotFound("Заявки на техническую проверку для данного авто не существует");
+
+            technical.IsBodyDamaged = inspection.IsBodyDamaged;
+            technical.KilometrageVerified = inspection.KilometrageVerified;
+            technical.Recommendations = inspection.Recommendations;
+            technical.CompletedAt = DateTime.UtcNow;
+            technical.Status = InspectionStatus.Inspected;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                Message = "Данные по технической проверке изменены",
+                Id = id
+            });
+        }
+
+
+        [HttpPost("legalinspection/{id}")]
+        public async Task<IActionResult> StartLegalInspection(int id, [FromBody] LegalInspectionDTO inspection)
+        {
+            var legal = await _context.LegalInspections.Where(x => x.Id == id && x.Status == InspectionStatus.New).FirstOrDefaultAsync();
+
+            if (legal == null)
+                return NotFound("Заявки на юридическую проверку для данного авто не существует");
+
+            legal.IsStolen = inspection.IsStolen;
+            legal.HasLien = inspection.HasLien;
+            legal.RegisteredInGIBDD = inspection.RegisteredInGIBDD;
+            legal.CompletedAt = DateTime.UtcNow;
+            legal.Status = InspectionStatus.Inspected;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                Message = "Данные по юридической проверке внесены",
+                Id = id
+            });
+        }
+
+        [HttpPut("legalinspection/{id}")]
+        public async Task<IActionResult> EditLegalInspection(int id, [FromBody] LegalInspectionDTO inspection)
+        {
+            var legal = await _context.LegalInspections.Where(x => x.Id == id && x.Status == InspectionStatus.Inspected).FirstOrDefaultAsync();
+
+            if (legal == null)
+                return NotFound("Заявки на юридическую проверку для данного авто не существует");
+
+            legal.IsStolen = inspection.IsStolen;
+            legal.HasLien = inspection.HasLien;
+            legal.RegisteredInGIBDD = inspection.RegisteredInGIBDD;
+            legal.CompletedAt = DateTime.UtcNow;
+            legal.Status = InspectionStatus.Inspected;
+
+            await _context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                Message = "Данные по юридической проверке изменены",
+                Id = id
+            });
+        }
+
+        [HttpGet("alltechnicalinspections")]
+        public async Task<IActionResult> GetAllTechInspections(
+            [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 10)
+        {
+            if (pageNumber < 1) { pageNumber = 1; }
+            if (pageSize > 50) { pageSize = 50; }
+
+            var technical = _context.TechnicalInspections.AsQueryable();
+
+            if (!technical.Any())
+                return NotFound("Нет задач на тенхическую проверку");
+
+            var totalCount = await technical.CountAsync();
+
+            var requests = await technical
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return Ok(new
+            {
+                Items = requests,
+                TotalCount = totalCount,
+                CurrentPage = pageNumber,
+                PageSize = pageSize,
+                TotalPages = (int)Math.Ceiling(totalCount / (double)pageSize)
+            });
+        }
+
+        [HttpGet("alllegalinspections")]
+        public async Task<IActionResult> GetAllLegalInspections(
+            [FromQuery] int pageNumber = 1,
+            [FromQuery] int pageSize = 10)
+        {
+            if (pageNumber < 1) { pageNumber = 1; }
+            if (pageSize > 50) { pageSize = 50; }
+
+            var technical = _context.LegalInspections.AsQueryable();
+
+            if (!technical.Any())
+                return NotFound("Нет задач на юридическую проверку");
+
+            var totalCount = await technical.CountAsync();
+
+            var requests = await technical
+                .Skip((pageNumber - 1) * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return Ok(new
+            {
+                Items = requests,
+                TotalCount = totalCount,
+                CurrentPage = pageNumber,
+                PageSize = pageSize,
+                TotalPages = (int)Math.Ceiling(totalCount / (double)pageSize)
+            });
+        }
+
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetInspection(int id)
+        {
+            var legal = await _context.LegalInspections.FirstOrDefaultAsync(x => x.Id == id);
+
+            var technical = await _context.TechnicalInspections.FirstOrDefaultAsync(x => x.Id == id);
 
             if (legal == null || technical == null)
             {
