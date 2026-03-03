@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:controllers\\inspectioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\models\\legalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:models\\legalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\models\\technicalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:models\\technicalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -31,12 +19,24 @@
       "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\dto\\vehiclestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:dto\\vehiclestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\models\\technicalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:models\\technicalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\models\\legalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:models\\legalinspection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:dto\\statusupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\dto\\vehiclestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|solutionrelative:dto\\vehiclestatusdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3C3D08D-F706-4FEE-B445-AF2B77DA74E7}|InspectionService.csproj|c:\\users\\gkras\\desktop\\\u0443\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u043A\u0443\u0440\u0441\u0430\u0447\\\u043C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\inspectionservice\\models\\vehicleselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,37 +78,41 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "LegalInspection.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Models\\LegalInspection.cs",
               "RelativeDocumentMoniker": "Models\\LegalInspection.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Models\\LegalInspection.cs",
               "RelativeToolTip": "Models\\LegalInspection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T14:59:58.824Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "Vehicle.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Models\\Vehicle.cs",
               "RelativeDocumentMoniker": "Models\\Vehicle.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Models\\Vehicle.cs",
               "RelativeToolTip": "Models\\Vehicle.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAA9wBIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAIAwwCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T14:47:10.676Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -116,20 +120,32 @@
               "RelativeToolTip": "Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T15:11:11.737Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T15:11:11.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBMAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T15:16:08.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-02-03T12:51:13.335Z",
               "EditorCaption": ""
             },
             {
@@ -140,14 +156,10 @@
               "RelativeDocumentMoniker": "Controllers\\InspectionController.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Controllers\\InspectionController.cs*",
               "RelativeToolTip": "Controllers\\InspectionController.cs*",
-              "ViewState": "AgIAAJsAAAAAAAAAAAAgwJgAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAUwHgAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T15:35:59.133Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
@@ -157,27 +169,14 @@
               "RelativeDocumentMoniker": "Models\\TechnicalInspection.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\Models\\TechnicalInspection.cs",
               "RelativeToolTip": "Models\\TechnicalInspection.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-03T14:57:52.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-03T12:51:13.335Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "VehicleStatusDto.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\DTO\\VehicleStatusDto.cs",
               "RelativeDocumentMoniker": "DTO\\VehicleStatusDto.cs",
@@ -185,8 +184,7 @@
               "RelativeToolTip": "DTO\\VehicleStatusDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T19:52:16.277Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-02T19:52:16.277Z"
             },
             {
               "$type": "Document",
@@ -198,18 +196,17 @@
               "RelativeToolTip": "Models\\VehicleSelection.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-03T14:43:10.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-03T14:43:10.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "StatusUpdateDTO.cs",
               "DocumentMoniker": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\DTO\\StatusUpdateDTO.cs",
               "RelativeDocumentMoniker": "DTO\\StatusUpdateDTO.cs",
               "ToolTip": "C:\\Users\\gkras\\Desktop\\\u0423\u0447\u0435\u0431\u0430\\8 \u0441\u0435\u043C\u0435\u0441\u0442\u0440\\\u041A\u0443\u0440\u0441\u0430\u0447\\\u041C\u0438\u043A\u0440\u043E\u0441\u0435\u0440\u0432\u0438\u0441\u044B\\InspectionService\\DTO\\StatusUpdateDTO.cs",
               "RelativeToolTip": "DTO\\StatusUpdateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T10:52:38.238Z",
               "EditorCaption": ""
@@ -224,8 +221,7 @@
               "RelativeToolTip": "DTO\\LegalInspectionDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T12:38:56.217Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T12:38:56.217Z"
             },
             {
               "$type": "Document",
@@ -237,8 +233,7 @@
               "RelativeToolTip": "DTO\\InspectionRequestDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-02T18:57:10.769Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-02T18:57:10.769Z"
             },
             {
               "$type": "Document",
@@ -250,8 +245,7 @@
               "RelativeToolTip": "DTO\\TechnicalInspectionDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T11:46:30.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-04T11:46:30.314Z"
             },
             {
               "$type": "Document",

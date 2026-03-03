@@ -1,22 +1,6 @@
 [
   {
     "ContainingType": "InspectionService.Controllers.InspectionController",
-    "Method": "GetInspection",
-    "RelativePath": "api/Inspection/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "InspectionService.Controllers.InspectionController",
     "Method": "GetAllLegalInspections",
     "RelativePath": "api/Inspection/alllegalinspections",
     "HttpMethod": "GET",
@@ -110,6 +94,27 @@
       {
         "Name": "inspection",
         "Type": "InspectionService.DTO.LegalInspectionDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "InspectionService.Controllers.InspectionController",
+    "Method": "GetInspection",
+    "RelativePath": "api/Inspection/request/{id}/vehicle/{vehicleId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "vehicleId",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

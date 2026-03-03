@@ -135,38 +135,12 @@ namespace ClientService.Controllers
             });
         }
 
-        [HttpGet("requests/{clientRequestId}")]
-        public async Task<IActionResult> Get(int clientRequestId)
-        {
-            var request = await _context.ClientRequests.FirstOrDefaultAsync(x => x.Id == clientRequestId && x.Status == RequestStatus.New);
-
-            if (request == null) return NotFound($"Заявка с номером {clientRequestId} не найдена");
-
-            var clientRequest = new ClientRequest
-            {
-                Id = request.Id,
-                ClientId = request.ClientId,
-                FullName = request.FullName,
-                Phone = request.Phone,
-                Email = request.Email,
-                PreferredBrand = request.PreferredBrand,
-                MaxKilometrage = request.MaxKilometrage,
-                Budget = request.Budget,
-                YearOfManufacture = request.YearOfManufacture,
-                Segment = request.Segment,
-                Source = request.Source,
-                Status = request.Status
-            };
-
-            return Ok(clientRequest);
-        }
-
         [HttpGet("requests/getall")]
         public async Task<IActionResult> GetAll(
-            [FromQuery] int pageNumber = 1,
-            [FromQuery] int pageSize = 10,
-            [FromQuery] RequestStatus? status = null,
-            [FromQuery] int? clientId = null)
+           [FromQuery] int pageNumber = 1,
+           [FromQuery] int pageSize = 10,
+           [FromQuery] RequestStatus? status = null,
+           [FromQuery] int? clientId = null)
         {
             if (pageNumber < 1) { pageNumber = 1; }
             if (pageSize > 50) { pageSize = 50; }
@@ -192,7 +166,7 @@ namespace ClientService.Controllers
                 .ToListAsync();
 
             var clientRequests = requests.Select(request => new ClientRequest
-            {   
+            {
                 Id = request.Id,
                 ClientId = request.ClientId,
                 FullName = request.FullName,
@@ -207,7 +181,8 @@ namespace ClientService.Controllers
                 Status = request.Status
             }).ToList();
 
-            return Ok(new {
+            return Ok(new
+            {
                 Items = clientRequests,
                 TotalCount = totalCount,
                 CurrentPage = pageNumber,
@@ -216,10 +191,38 @@ namespace ClientService.Controllers
             });
         }
 
+        [HttpGet("requests/{clientRequestId}")]
+        public async Task<IActionResult> Get(int clientRequestId)
+        {
+            var request = await _context.ClientRequests.FirstOrDefaultAsync(x => x.Id == clientRequestId && x.Status != RequestStatus.Draft);
+
+            if (request == null) return NotFound($"Заявка с номером {clientRequestId} не найдена");
+
+            var clientRequest = new ClientRequest
+            {
+                Id = request.Id,
+                ClientId = request.ClientId,
+                FullName = request.FullName,
+                Phone = request.Phone,
+                Email = request.Email,
+                PreferredBrand = request.PreferredBrand,
+                MaxKilometrage = request.MaxKilometrage,
+                Budget = request.Budget,
+                YearOfManufacture = request.YearOfManufacture,
+                Segment = request.Segment,
+                Source = request.Source,
+                Status = request.Status
+            };
+
+            return Ok(clientRequest);
+        }
+
+       
+
         [HttpPut("requests/{clientRequestId}")]
         public async Task<IActionResult> Update(int clientRequestId, [FromBody] ClientRequest clientRequest)
         {
-            var requestForEdition = await _context.ClientRequests.FirstOrDefaultAsync(x => x.Id == clientRequestId && x.Status == RequestStatus.New);
+            var requestForEdition = await _context.ClientRequests.FirstOrDefaultAsync(x => x.Id == clientRequestId && x.Status != RequestStatus.Draft);
 
             if (requestForEdition == null) { return NotFound($"Заявка с номером {clientRequestId} не найдена"); }
 

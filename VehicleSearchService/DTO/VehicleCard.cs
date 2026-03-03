@@ -10,7 +10,7 @@ namespace VehicleSearchService.DTO
         public string Brand { get; set; }
         public string Model { get; set; }
         public int Kilometrage { get; set; }
-        public Status Status { get; set; }
+        public VehicleStatus Status { get; set; }
 
     }
 }

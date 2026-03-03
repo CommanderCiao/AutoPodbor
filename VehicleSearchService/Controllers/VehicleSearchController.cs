@@ -70,7 +70,7 @@ namespace VehicleSearchService.Controllers
             (string.IsNullOrEmpty(clientCriteria.PreferredBrand) || v.Brand == clientCriteria.PreferredBrand) &&
             (clientCriteria.Segment == 0 || v.Segment == clientCriteria.Segment) &&
             (clientCriteria.Source == 0 || v.Source == clientCriteria.Source) &&
-            (v.Status == Status.Available)
+            (v.Status == VehicleStatus.Available)
             )
             .ToListAsync();
 

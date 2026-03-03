@@ -4,6 +4,6 @@ namespace VehicleSearchService.DTO
 {
     public class VehicleStatusDto
     {
-        public Status Status { get; set; }
+        public VehicleStatus Status { get; set; }
     }
 }

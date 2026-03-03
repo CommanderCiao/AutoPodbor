@@ -11,12 +11,12 @@ namespace VehicleSearchService.Models
         public decimal Price { get; set; }             
         public Segment Segment { get; set; }           
         public SourceOfPurchase Source { get; set; }       
-        public Status Status { get; set; }
+        public VehicleStatus Status { get; set; }
         public string? Model { get; set; }        
         public string? VIN { get; set; }
     }
 
-    public enum Status
+    public enum VehicleStatus
     {
         Available,
         Reserved,
@@ -41,11 +41,14 @@ namespace VehicleSearchService.Models
     }
     public enum RequestStatus
     {
+        Draft,
         New,
         InReview,
+        Inspected,
         DealPrepared,
         InTransit,
         Delivered,
+        Completed,
         Closed
     }
 }

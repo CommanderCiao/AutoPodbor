@@ -30,13 +30,23 @@ namespace InspectionService.Controllers
         public async Task<IActionResult> CreateInspectionRequest([FromBody] InspectionRequestDto dto)
         {
             var baseUrl = _config["VehicleSearchUrl"];
-            var httpVehicleClient = _httpClientFactory.CreateClient();
+            var httpClient = _httpClientFactory.CreateClient();
+
+            var techrequest = await _context.LegalInspections.AnyAsync(x => x.ClientRequestId == dto.ClientRequestId);
+            var legalrequest = await _context.TechnicalInspections.AnyAsync(x => x.ClientRequestId == dto.ClientRequestId);
+
+            if (techrequest || legalrequest)
+                return Conflict("Проверка по данному подбору уже выполнена");
 
             var createdInspections = new List<object>();
 
+            if (dto.VehicleIds.Count > 3)
+                return BadRequest("Нельзя выбирать более трех автомобилей для проведения проверки");
+
+
             foreach (var id in dto.VehicleIds)
             {
-                var response = await httpVehicleClient.GetAsync($"{baseUrl}/api/VehicleSearch/getVehicleInfo/{id}");
+                var response = await httpClient.GetAsync($"{baseUrl}/api/VehicleSearch/getVehicleInfo/{id}");
 
                 if (!response.IsSuccessStatusCode)
                 {
@@ -54,8 +64,6 @@ namespace InspectionService.Controllers
                 {
                     return BadRequest($"Автомобиль недоступен для проверки: {vehicle.Status}");
                 }
-
-                var responseVehicle = await httpVehicleClient.PutAsJsonAsync($"{baseUrl}/api/vehiclesearch/statusUpdate/{id}", new VehicleStatusDto { Status = VehicleStatus.UnderCheck });
 
                 var technicalInspection = new TechnicalInspection
                 {
@@ -107,9 +115,30 @@ namespace InspectionService.Controllers
 
             await _context.SaveChangesAsync();
 
+            var legal = await _context.LegalInspections
+                .FirstOrDefaultAsync(x => x.ClientRequestId == technical.ClientRequestId && x.VehicleId == technical.VehicleId);
+
+            var message = "";
+            if (legal != null && legal.Status == InspectionStatus.Inspected)
+            {
+                var baseClientUrl = _config["ClientServiceUrl"];
+                var httpClient = _httpClientFactory.CreateClient();
+                var responseClient = await httpClient.PutAsJsonAsync($"{baseClientUrl}/api/ClientRequests/requests/{legal.ClientRequestId}/status", new StatusUpdateDTO { Status = RequestStatus.Inspected });
+
+                var responseContent = await responseClient.Content.ReadAsStringAsync();
+                if (responseClient.IsSuccessStatusCode)
+                {
+                    message = " и обновлен статус заявки на подбор";
+                }
+                else
+                {
+                    message = $" (ОШИБКА: {responseClient.StatusCode} - {responseContent})";
+                }
+            }
+
             return Ok(new
             {
-                Message = "Данные по технической проверке внесены",
+                Message = "Данные по технической проверке внесены" + message,
                 Id = id
             });
         }
@@ -154,9 +183,31 @@ namespace InspectionService.Controllers
 
             await _context.SaveChangesAsync();
 
+            var technical = await _context.TechnicalInspections
+                .FirstOrDefaultAsync(x => x.ClientRequestId == legal.ClientRequestId && x.VehicleId == legal.VehicleId);
+            var message = "";
+            if (technical != null && technical.Status == InspectionStatus.Inspected)
+            {
+                var baseClientUrl = _config["ClientServiceUrl"];
+                var httpClient = _httpClientFactory.CreateClient();
+                var responseClient = await httpClient.PutAsJsonAsync($"{baseClientUrl}/api/ClientRequests/requests/{technical.ClientRequestId}/status", new StatusUpdateDTO { Status = RequestStatus.Inspected });
+
+                message = " и обновлен статус заявки на подбор";
+
+                var responseContent = await responseClient.Content.ReadAsStringAsync();
+                if (responseClient.IsSuccessStatusCode)
+                {
+                    message = " и обновлен статус заявки на подбор";
+                }
+                else
+                {
+                    message = $" (ОШИБКА: {responseClient.StatusCode} - {responseContent})";
+                }
+            }
+
             return Ok(new
             {
-                Message = "Данные по юридической проверке внесены",
+                Message = "Данные по юридической проверке внесены" + message,
                 Id = id
             });
         }
@@ -245,10 +296,10 @@ namespace InspectionService.Controllers
         }
 
 
-        [HttpGet("{id}")]
-        public async Task<IActionResult> GetInspection(int id)
+        [HttpGet("request/{id}/vehicle/{vehicleId}")]
+        public async Task<IActionResult> GetInspection(int id, int vehicleId)
         {
-            var legal = await _context.LegalInspections.FirstOrDefaultAsync(x => x.Id == id);
+            var legal = await _context.LegalInspections.FirstOrDefaultAsync(x => x.ClientRequestId == id && x.VehicleId == vehicleId);
 
             var technical = await _context.TechnicalInspections.FirstOrDefaultAsync(x => x.Id == id);
 

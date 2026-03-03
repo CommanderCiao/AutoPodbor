@@ -39,7 +39,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Working,
                 Source = SourceOfPurchase.PrivateSeller,
                 VIN = "XTA219000N0123456",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -52,7 +52,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Working,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "XTA219000M0234567",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -65,7 +65,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Working,
                 Source = SourceOfPurchase.PrivateSeller,
                 VIN = "XUF553000L0345678",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -78,7 +78,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Working,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "KNAFB811CN0456789",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -91,7 +91,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Working,
                 Source = SourceOfPurchase.PrivateSeller,
                 VIN = "KMJB8111CN0567890",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -104,7 +104,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Working,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "XTA212300M0678901",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -117,7 +117,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Working,
                 Source = SourceOfPurchase.PrivateSeller,
                 VIN = "WVWZZZ6RZLP0789012",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -130,7 +130,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Working,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "TMBZZZNH5M00890123",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
 
             // === Middle сегмент (10 авто) ===
@@ -145,7 +145,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "KNAK6811CN0901234",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -158,7 +158,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "KMJS8811CN1012345",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -171,7 +171,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Import,
                 VIN = "JTMBF33V1M0112345",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -184,7 +184,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Import,
                 VIN = "JTMBF33V2N0123456",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -197,7 +197,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "WVWZZZ5NZMW134567",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -210,7 +210,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.PrivateSeller,
                 VIN = "TMBZZZNE5N0145678",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -223,7 +223,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "L6T889CE4RN156789",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -236,7 +236,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "LGWFF5A59PH167890",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -249,7 +249,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "LVVDB11B9PD178901",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -262,7 +262,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Middle,
                 Source = SourceOfPurchase.Import,
                 VIN = "JM3KFBDM5M0189012",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
 
             // === Premium сегмент (7 авто) ===
@@ -277,7 +277,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Premium,
                 Source = SourceOfPurchase.Import,
                 VIN = "WBAKR4105N0190123",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -290,7 +290,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Premium,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "WBA8E9105M0201234",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -303,7 +303,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Premium,
                 Source = SourceOfPurchase.Import,
                 VIN = "WDD1670151A212345",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -316,7 +316,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Premium,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "WDD2530151N223456",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -329,7 +329,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Premium,
                 Source = SourceOfPurchase.Import,
                 VIN = "WAUZZZ4M5N0234567",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -342,7 +342,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Premium,
                 Source = SourceOfPurchase.Dealer,
                 VIN = "WAUZZZ8R5N0245678",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             },
             new Vehicle
             {
@@ -355,7 +355,7 @@ using (var scope = app.Services.CreateScope())
                 Segment = Segment.Premium,
                 Source = SourceOfPurchase.Import,
                 VIN = "JTJGAMBA5P0256789",
-                Status = Status.Available
+                Status = VehicleStatus.Available
             }
         };
 
